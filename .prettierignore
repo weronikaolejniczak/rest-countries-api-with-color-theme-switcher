@@ -1,0 +1,11 @@
+# Ignore configurations
+.github
+.husky
+design
+
+# Ignore artifacts
+dist
+coverage
+
+# Ignore dependencies
+node_modules
