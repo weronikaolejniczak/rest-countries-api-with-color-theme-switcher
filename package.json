@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "prepare": "husky install"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -33,6 +34,7 @@
     "eslint-plugin-react": "^7.28.0",
     "eslint-plugin-react-hooks": "^4.3.0",
     "husky": "^8.0.1",
+    "lint-staged": ">=10",
     "prettier": "2.7.1",
     "semantic-release": "^19.0.3",
     "stylelint": "^14.9.1",
@@ -45,5 +47,13 @@
   },
   "resolutions": {
     "styled-components": "^5"
+  },
+  "lint-staged": {
+    "*.{js,ts,jsx,tsx}": [
+      "eslint --cache --fix",
+      "stylelint --fix",
+      "prettier --write"
+    ],
+    "*.md": "prettier --write"
   }
 }
