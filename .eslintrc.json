@@ -17,7 +17,7 @@
       "jsx": true
     },
     "ecmaVersion": "latest",
-    "project": "./tsconfig.json",
+    "project": ["./tsconfig.json", "./tsconfig.node.json"],
     "sourceType": "module"
   },
   "plugins": ["react", "@typescript-eslint"],
@@ -35,6 +35,10 @@
     "react/jsx-uses-react": 0,
     "react/react-in-jsx-scope": 0,
     // Import
-    "import/prefer-default-export": 0
+    "import/prefer-default-export": 0,
+    "import/no-extraneous-dependencies": [
+      2,
+      { "devDependencies": ["./vite.config.ts"] }
+    ]
   }
 }
