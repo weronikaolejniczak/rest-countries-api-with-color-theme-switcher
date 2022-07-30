@@ -6,8 +6,8 @@
   "extends": [
     "plugin:react/recommended",
     "airbnb",
+    "airbnb-typescript",
     "airbnb/hooks",
-    "stylelint",
     "prettier"
   ],
   "parser": "@typescript-eslint/parser",
@@ -16,14 +16,24 @@
       "jsx": true
     },
     "ecmaVersion": "latest",
+    "project": "./tsconfig.json",
     "sourceType": "module"
   },
   "plugins": ["react", "@typescript-eslint"],
   "rules": {
+    "react/function-component-definition": [
+      1,
+      {
+        "namedComponents": "arrow-function",
+        "unnamedComponents": "arrow-function"
+      }
+    ],
     // Extensions
     "react/jsx-filename-extension": [1, { "extensions": [".jsx", ".tsx"] }],
     // New JSX transform
     "react/jsx-uses-react": 0,
-    "react/react-in-jsx-scope": 0
+    "react/react-in-jsx-scope": 0,
+    // Import
+    "import/prefer-default-export": 0
   }
 }
