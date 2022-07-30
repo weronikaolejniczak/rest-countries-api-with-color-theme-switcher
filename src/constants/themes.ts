@@ -9,7 +9,7 @@ const Theme = (colors: ColorsType): DefaultTheme => ({
     mobile: '375px',
   },
   colors,
-  fontFamily: 'Nunito Sans',
+  fontFamilies: ["'Nunito Sans'", 'sans-serif'],
   fontSizes: {
     homepage: '14px',
     detailPage: '16px',
