@@ -14,6 +14,7 @@ const Theme = (colors: ColorsType): DefaultTheme => ({
     homepage: '14px',
     detailPage: '16px',
   },
+  shadow: '0 0 1rem -0.5rem rgba(0, 0, 0, 0.5)',
   weights: {
     light: 300,
     regular: 600,

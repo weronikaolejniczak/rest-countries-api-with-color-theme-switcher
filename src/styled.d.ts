@@ -7,6 +7,7 @@ declare module 'styled-components' {
     colors: { [key: string]: string };
     fontFamilies: string[];
     fontSizes: { [key: string]: string };
+    shadow: string;
     weights: { [key: string]: number };
   }
 }
