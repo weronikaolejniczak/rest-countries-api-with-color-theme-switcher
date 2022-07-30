@@ -1,7 +1,7 @@
 import { ReactNode, useState } from 'react';
 import { ThemeProvider } from 'styled-components';
 
-import { darkTheme, lightTheme } from '../constants/themes';
+import { darkTheme, lightTheme } from 'constants/themes';
 
 const darkModeMatchMedia = window.matchMedia('(prefers-color-scheme: dark)');
 
