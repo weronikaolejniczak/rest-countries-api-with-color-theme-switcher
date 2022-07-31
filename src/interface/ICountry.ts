@@ -13,6 +13,7 @@ export interface ICountry {
   cca2: string;
   ccn3: string;
   cca3: string;
+  cioc?: string;
   independent: boolean;
   status: string;
   unMember: boolean;
@@ -41,6 +42,7 @@ export interface ICountry {
   };
   latlng: number[];
   landlocked: boolean;
+  borders?: string[];
   area: number;
   demonyms: {
     [key: string]: {
@@ -53,6 +55,10 @@ export interface ICountry {
     [key: string]: string;
   };
   population: number;
+  gini?: {
+    [key: number]: number;
+  };
+  fifa?: string;
   car: {
     signs: string[];
     side: string;
@@ -71,6 +77,6 @@ export interface ICountry {
   };
   postalCode: {
     format: string;
-    regex: RegExp;
+    regex: string;
   };
 }

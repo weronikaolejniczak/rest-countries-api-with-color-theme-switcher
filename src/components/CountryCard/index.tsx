@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 import { ICountry } from 'interface/ICountry';
-import { Row } from './Row';
+import { Row } from 'components/Row';
 
 const Wrapper = styled.div`
   background-color: ${({ theme: { colors } }) => colors.elements};
@@ -38,7 +38,7 @@ export const CountryCard = ({ country }: CountryCardPropsType) => {
 
   return (
     <Wrapper>
-      <Image src={png} />
+      <Image src={png} data-testid="country-card-flag" />
       <Description>
         <h2>{common}</h2>
         <Row label="Population" value={String(population)} />
