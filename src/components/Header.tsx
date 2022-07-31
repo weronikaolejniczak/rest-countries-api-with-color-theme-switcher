@@ -10,6 +10,7 @@ const Wrapper = styled.header`
   flex-direction: row;
   justify-content: space-between;
   padding: 2rem 6rem;
+  width: 100%;
 `;
 
 export const Header = () => (

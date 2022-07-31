@@ -5,7 +5,9 @@ type ColorsType = { [key: string]: string };
 const Theme = (colors: ColorsType): DefaultTheme => ({
   borderRadius: '6px',
   breakpoints: {
-    desktop: '1440px',
+    xlDesktop: '1440px',
+    desktop: '1024px',
+    tablet: '768px',
     mobile: '375px',
   },
   colors,
