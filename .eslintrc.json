@@ -22,6 +22,7 @@
   },
   "plugins": ["react", "@typescript-eslint"],
   "rules": {
+    "react/jsx-props-no-spreading": 0,
     "react/function-component-definition": [
       1,
       {
@@ -38,7 +39,15 @@
     "import/prefer-default-export": 0,
     "import/no-extraneous-dependencies": [
       2,
-      { "devDependencies": ["./vite.config.ts"] }
+      {
+        "devDependencies": [
+          "./vite.config.ts",
+          "./vitest.config.ts",
+          "./src/**/*.stories.tsx",
+          "./src/**/*.test.{ts,tsx}",
+          "./src/setupTests.ts"
+        ]
+      }
     ]
   }
 }

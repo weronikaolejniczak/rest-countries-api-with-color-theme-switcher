@@ -5,15 +5,18 @@ type ColorsType = { [key: string]: string };
 const Theme = (colors: ColorsType): DefaultTheme => ({
   borderRadius: '6px',
   breakpoints: {
-    desktop: '1440px',
+    xlDesktop: '1440px',
+    desktop: '1024px',
+    tablet: '768px',
     mobile: '375px',
   },
   colors,
-  fontFamily: 'Nunito Sans',
+  fontFamilies: ["'Nunito Sans'", 'sans-serif'],
   fontSizes: {
     homepage: '14px',
     detailPage: '16px',
   },
+  shadow: '0 0 1rem -0.5rem rgba(0, 0, 0, 0.5)',
   weights: {
     light: 300,
     regular: 600,

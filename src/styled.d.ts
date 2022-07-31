@@ -5,8 +5,9 @@ declare module 'styled-components' {
     borderRadius: string;
     breakpoints: { [key: string]: string };
     colors: { [key: string]: string };
-    fontFamily: string;
+    fontFamilies: string[];
     fontSizes: { [key: string]: string };
+    shadow: string;
     weights: { [key: string]: number };
   }
 }
